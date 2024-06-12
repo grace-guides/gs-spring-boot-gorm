@@ -1,11 +1,15 @@
 plugins {
 	id 'groovy'
-	id 'org.springframework.boot' version '2.7.18'
-	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+	id 'org.springframework.boot'
+	id 'io.spring.dependency-management'
+	id 'org.graceframework.grace-core'
 }
 
+ext['spring-boot.version'] = springBootVersion
+ext['tomcat.version'] = tomcatVersion
+
 group = 'grace.guides'
-version = '0.0.1-SNAPSHOT'
+version = projectVersion
 
 java {
 	sourceCompatibility = '11'
@@ -19,6 +23,12 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.codehaus.groovy:groovy'
+	implementation 'org.graceframework:grace-boot'
+	implementation 'org.graceframework:grace-core'
+	implementation 'org.graceframework:grace-plugin-core'
+	implementation 'org.graceframework:grace-plugin-datasource'
+	implementation 'org.graceframework.plugins:hibernate5'
+	runtimeOnly 'com.h2database:h2'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

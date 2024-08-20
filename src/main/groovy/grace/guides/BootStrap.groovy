@@ -10,12 +10,9 @@ class BootStrap {
 
     @Transactional
     void init() {
-        new Post(title: 'Grace 2022.2.0 is released').save()
-        new Post(title: 'Grace 2022.2.1 is released').save()
-        new Post(title: 'Grace 2022.2.2 is released').save()
-        new Post(title: 'Grace 2022.2.3 is released').save()
-        new Post(title: 'Grace 2022.2.4 is released').save()
-        new Post(title: 'Grace 2022.2.5 is released').save()
+        (0..8).each {
+            new Post(title: "Grace 2022.2.$it is released").save()
+        }
         new Post(title: "What's new in Grace 2023.0.0?").save()
     }
 }

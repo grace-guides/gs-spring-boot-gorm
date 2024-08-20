@@ -4,6 +4,11 @@
 
 Learn how to build a Spring Boot application using GORM.
 
+### Versions
+
+* Spring Boot 2.7.18
+* Grace Framework 2022.2.8
+
 ### Adding Grace Dependencies
 
 ```gradle

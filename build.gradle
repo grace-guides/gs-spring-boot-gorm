@@ -5,11 +5,14 @@ plugins {
 	id 'org.graceframework.grace-core'
 }
 
+ext['spring-boot.version'] = '3.3.2'
+ext['spring-framework.version'] = '6.1.12'
+
 group = 'grace.guides'
 version = projectVersion
 
 java {
-	sourceCompatibility = '11'
+	sourceCompatibility = '17'
 }
 
 repositories {
@@ -19,12 +22,12 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.codehaus.groovy:groovy'
+	implementation 'org.apache.groovy:groovy'
 	implementation 'org.graceframework:grace-boot'
 	implementation 'org.graceframework:grace-core'
 	implementation 'org.graceframework:grace-plugin-core'
 	implementation 'org.graceframework:grace-plugin-datasource'
-	implementation 'org.graceframework.plugins:hibernate5'
+	implementation 'org.graceframework.plugins:hibernate'
 	runtimeOnly 'com.h2database:h2'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

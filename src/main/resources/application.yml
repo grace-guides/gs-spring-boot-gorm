@@ -2,10 +2,6 @@ logging:
     level:
         org.hibernate.orm.deprecation: error
         org.grails.plugins.support: debug
-spring:
-    main:
-        allow-bean-definition-overriding: true
-        allow-circular-references: true
 hibernate:
     show_sql: true
     hbm2ddl:

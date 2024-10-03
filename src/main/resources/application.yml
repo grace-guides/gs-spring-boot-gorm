@@ -4,8 +4,6 @@ logging:
         org.grails.plugins.support: debug
 hibernate:
     show_sql: true
-    hbm2ddl:
-        auto: create
     dialect:  org.hibernate.dialect.H2Dialect
 dataSource:
     dbCreate: create-drop

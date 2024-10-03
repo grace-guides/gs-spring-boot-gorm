@@ -5,8 +5,8 @@ plugins {
 	id 'org.graceframework.grace-core'
 }
 
-ext['spring-boot.version'] = '3.3.2'
-ext['spring-framework.version'] = '6.1.12'
+ext['spring-boot.version'] = springBootVersion
+ext['spring-framework.version'] = springFrameworkVersion
 
 group = 'grace.guides'
 version = projectVersion

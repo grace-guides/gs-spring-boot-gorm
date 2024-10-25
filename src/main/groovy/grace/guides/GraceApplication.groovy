@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
 import org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration
 
-@SpringBootApplication(exclude = [HibernateJpaAutoConfiguration, DataSourceAutoConfiguration, TransactionAutoConfiguration])
+@SpringBootApplication
 class GraceApplication implements CommandLineRunner {
 
 	@Autowired

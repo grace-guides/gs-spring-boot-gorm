@@ -33,6 +33,13 @@ class GraceApplication implements CommandLineRunner {
 			println it 
 		}
 
+		println()
+		println 'Load All Comments '.padRight(94, '>')
+		Comment.withTransaction { status ->
+			Comment.list().each {
+				println it.text
+			}
+		}
 	}
 
 }

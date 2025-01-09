@@ -3,7 +3,7 @@
 [![Grace on X](https://img.shields.io/twitter/follow/graceframework?style=social)](https://twitter.com/graceframework)
 
 [![Groovy Version](https://img.shields.io/badge/Groovy-4.0.24-blue?style=flat&color=4298b8)](https://groovy-lang.org/releasenotes/groovy-4.0.html)
-[![Grace Version](https://img.shields.io/badge/Grace-2023.2.0-blue?style=flat&color=f49b06)](https://github.com/graceframework/grace-framework/releases/tag/v2023.2.0-RC1)
+[![Grace Version](https://img.shields.io/badge/Grace-2023.2.0-blue?style=flat&color=f49b06)](https://github.com/graceframework/grace-framework/releases/tag/v2023.2.0)
 [![Spring Boot Version](https://img.shields.io/badge/Spring_Boot-3.3.7-blue?style=flat&color=6db33f)](https://github.com/spring-projects/spring-boot/releases/tag/v3.3.7)
 
 
@@ -14,7 +14,7 @@ Learn how to build a Spring Boot application using GORM.
 ### Versions
 
 * Spring Boot 3.3.7
-* Grace Framework 2023.2.0-RC1
+* Grace Framework 2023.2.0
 
 ### Adding Grace Dependencies
 
@@ -154,37 +154,37 @@ Staring the App by execute the following Gradle task,
 
  :: Spring Boot ::                (v3.3.7)
 
-2025-01-03T19:16:42.821+08:00  INFO 21051 --- [  restartedMain] grace.guides.GraceApplication            : Starting GraceApplication using Java 17.0.12 with PID 21051 (/Users/rain/Development/github/grace/grace-guides/gs-spring-boot-gorm/build/classes/groovy/main started by rain in /Users/rain/Development/github/grace/grace-guides/gs-spring-boot-gorm)
-2025-01-03T19:16:42.822+08:00  INFO 21051 --- [  restartedMain] grace.guides.GraceApplication            : No active profile set, falling back to 1 default profile: "default"
-2025-01-03T19:16:42.842+08:00  INFO 21051 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-03T19:16:42.842+08:00  INFO 21051 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-03T19:16:43.532+08:00  INFO 21051 --- [  restartedMain] g.plugins.DefaultGrailsPluginManager     : Total 3 plugins loaded successfully, take in 33 ms
-2025-01-03T19:16:43.764+08:00  INFO 21051 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-01-03T19:16:43.774+08:00  INFO 21051 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-03T19:16:43.774+08:00  INFO 21051 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-01-03T19:16:43.793+08:00  INFO 21051 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-03T19:16:43.793+08:00  INFO 21051 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 951 ms
-2025-01-03T19:16:43.970+08:00  INFO 21051 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
-2025-01-03T19:16:44.072+08:00  INFO 21051 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2025-01-03T19:16:44.207+08:00  INFO 21051 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-09T17:56:38.195+08:00  INFO 15649 --- [  restartedMain] grace.guides.GraceApplication            : Starting GraceApplication using Java 17.0.12 with PID 15649 (/Users/rain/Development/github/grace/grace-guides/gs-spring-boot-gorm/build/classes/groovy/main started by rain in /Users/rain/Development/github/grace/grace-guides/gs-spring-boot-gorm)
+2025-01-09T17:56:38.196+08:00  INFO 15649 --- [  restartedMain] grace.guides.GraceApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-01-09T17:56:38.214+08:00  INFO 15649 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-09T17:56:38.214+08:00  INFO 15649 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-09T17:56:38.731+08:00  INFO 15649 --- [  restartedMain] g.plugins.DefaultGrailsPluginManager     : Total 3 plugins loaded successfully, take in 33 ms
+2025-01-09T17:56:38.968+08:00  INFO 15649 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-09T17:56:38.976+08:00  INFO 15649 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-09T17:56:38.976+08:00  INFO 15649 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-09T17:56:38.996+08:00  INFO 15649 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-09T17:56:38.997+08:00  INFO 15649 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 782 ms
+2025-01-09T17:56:39.177+08:00  INFO 15649 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-01-09T17:56:39.280+08:00  INFO 15649 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-09T17:56:39.417+08:00  INFO 15649 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: drop table if exists comment CASCADE
 Hibernate: drop table if exists post CASCADE
 Hibernate: create table comment (id bigint generated by default as identity, version bigint not null, text varchar(255) not null, primary key (id))
 Hibernate: create table post (id bigint generated by default as identity, version bigint not null, title varchar(255) not null, primary key (id))
-2025-01-03T19:16:44.639+08:00  WARN 21051 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-03T19:16:44.832+08:00  WARN 21051 --- [  restartedMain] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
-2025-01-03T19:16:44.873+08:00  INFO 21051 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./build/boot_dev'
-2025-01-03T19:16:44.893+08:00  INFO 21051 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-03T19:16:44.902+08:00  INFO 21051 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2025-01-03T19:16:44.942+08:00  INFO 21051 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-01-03T19:16:44.953+08:00  INFO 21051 --- [  restartedMain] grace.guides.GraceApplication            : Started GraceApplication in 2.312 seconds (process running for 2.714)
-2025-01-03T19:16:44.962+08:00 DEBUG 21051 --- [  restartedMain] PluginsInfoApplicationContextInitializer :
+2025-01-09T17:56:39.828+08:00  WARN 15649 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-09T17:56:40.038+08:00  WARN 15649 --- [  restartedMain] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2025-01-09T17:56:40.081+08:00  INFO 15649 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./build/boot_dev'
+2025-01-09T17:56:40.099+08:00  INFO 15649 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-09T17:56:40.107+08:00  INFO 15649 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-01-09T17:56:40.155+08:00  INFO 15649 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-09T17:56:40.166+08:00  INFO 15649 --- [  restartedMain] grace.guides.GraceApplication            : Started GraceApplication in 2.141 seconds (process running for 2.486)
+2025-01-09T17:56:40.175+08:00 DEBUG 15649 --- [  restartedMain] PluginsInfoApplicationContextInitializer :
 ----------------------------------------------------------------------------------------------
 Order      Plugin Name                              Plugin Version                     Enabled
 ----------------------------------------------------------------------------------------------
-    1      Core                                     2023.2.0-RC1                             Y
-    2      DataSource                               2023.2.0-RC1                             Y
-    3      Hibernate                                2023.2.0-RC1                             Y
+    1      Core                                     2023.2.0                                 Y
+    2      DataSource                               2023.2.0                                 Y
+    3      Hibernate                                2023.2.0                                 Y
 ----------------------------------------------------------------------------------------------
 
 Prepare Sample Data >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

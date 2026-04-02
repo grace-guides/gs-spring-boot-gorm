@@ -1,8 +1,8 @@
 plugins {
     id 'groovy'
-    id 'org.springframework.boot' version '3.3.13'
+    id 'org.springframework.boot' version '3.4.13'
     id 'io.spring.dependency-management' version '1.1.7'
-    id 'org.graceframework.grace-core' version '2023.3.0'
+    id 'org.graceframework.grace-core' version '2024.0.0'
 }
 
 group = 'grace.guides'
@@ -23,9 +23,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.apache.groovy:groovy'
     implementation 'org.graceframework:grace-boot'
-    implementation 'org.graceframework:grace-plugin-core'
-    implementation 'org.graceframework:grace-plugin-datasource'
-    implementation 'org.graceframework.plugins:hibernate'
+    implementation 'org.graceframework:grace-boot-hibernate'
+    implementation 'org.graceframework:grace-boot-persistence'
     runtimeOnly 'com.h2database:h2'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'

@@ -3,7 +3,7 @@
 [![Grace on X](https://img.shields.io/twitter/follow/graceframework?style=social)](https://twitter.com/graceframework)
 
 [![Groovy Version](https://img.shields.io/badge/Groovy-4.0.30-blue?style=flat&color=4298b8)](https://groovy-lang.org/releasenotes/groovy-4.0.html)
-[![Grace Version](https://img.shields.io/badge/Grace-2024.0.0-blue?style=flat&color=f49b06)](https://github.com/graceframework/grace-framework/releases/tag/v2024.0.0)
+[![Grace Version](https://img.shields.io/badge/Grace-2024.0.1-blue?style=flat&color=f49b06)](https://github.com/graceframework/grace-framework/releases/tag/v2024.0.1)
 [![Spring Boot Version](https://img.shields.io/badge/Spring_Boot-3.4.13-blue?style=flat&color=6db33f)](https://github.com/spring-projects/spring-boot/releases/tag/v3.4.13)
 
 
@@ -14,7 +14,7 @@ Learn how to build a Spring Boot application using GORM.
 ### Versions
 
 * Spring Boot 3.4.13
-* Grace Framework 2024.0.0
+* Grace Framework 2024.0.1
 * Groovy 4.0.30
 
 ### Adding Grace Dependencies
@@ -154,40 +154,44 @@ Staring the App by execute the following Gradle task,
 
  :: Spring Boot ::               (v3.4.13)
 
-2026-04-02T14:57:07.140+08:00  INFO 88312 --- [  restartedMain] grace.guides.GraceApplication            : Starting GraceApplication using Java 17.0.17 with PID 88312 (/Users/rain/Development/grace/grace-guides/gs-spring-boot-gorm/build/classes/groovy/main started by rain in /Users/rain/Development/grace/grace-guides/gs-spring-boot-gorm)
-2026-04-02T14:57:07.142+08:00  INFO 88312 --- [  restartedMain] grace.guides.GraceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-04-02T14:57:07.187+08:00  INFO 88312 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-04-02T14:57:07.187+08:00  INFO 88312 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-04-02T14:57:08.445+08:00  INFO 88312 --- [  restartedMain] g.plugins.DefaultGrailsPluginManager     : Total 4 plugins loaded successfully, take in 89 ms
-2026-04-02T14:57:09.079+08:00  INFO 88312 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-04-02T14:57:09.098+08:00  INFO 88312 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-04-02T14:57:09.099+08:00  INFO 88312 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.53]
-2026-04-02T14:57:09.149+08:00  INFO 88312 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-04-02T14:57:09.151+08:00  INFO 88312 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1963 ms
-2026-04-02T14:57:09.652+08:00  INFO 88312 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
-2026-04-02T14:57:09.991+08:00  INFO 88312 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2026-04-02T14:57:10.460+08:00  INFO 88312 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-04-29T11:34:23.495-05:00  INFO 5786 --- [  restartedMain] grace.guides.GraceApplication            : Starting GraceApplication using Java 17.0.17 with PID 5786 (/Users/rain/Development/grace/grace-guides/gs-spring-boot-gorm/build/classes/groovy/main started by rain in /Users/rain/Development/grace/grace-guides/gs-spring-boot-gorm)
+2026-04-29T11:34:23.498-05:00  INFO 5786 --- [  restartedMain] grace.guides.GraceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-04-29T11:34:23.546-05:00  INFO 5786 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-29T11:34:23.546-05:00  INFO 5786 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-29T11:34:24.865-05:00  INFO 5786 --- [  restartedMain] g.plugins.DefaultGrailsPluginManager     : Total 4 plugins loaded successfully, take in 73 ms
+2026-04-29T11:34:25.388-05:00  INFO 5786 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-29T11:34:25.405-05:00  INFO 5786 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-29T11:34:25.405-05:00  INFO 5786 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-04-29T11:34:25.456-05:00  INFO 5786 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-29T11:34:25.458-05:00  INFO 5786 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1910 ms
+2026-04-29T11:34:25.920-05:00  INFO 5786 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-04-29T11:34:26.195-05:00  INFO 5786 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-04-29T11:34:26.586-05:00  INFO 5786 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: drop table if exists comment CASCADE
 Hibernate: drop table if exists post CASCADE
 Hibernate: create table comment (id bigint generated by default as identity, version bigint not null, text varchar(255) not null, primary key (id))
 Hibernate: create table post (id bigint generated by default as identity, version bigint not null, title varchar(255) not null, primary key (id))
-2026-04-02T14:57:11.621+08:00  WARN 88312 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-04-02T14:57:12.224+08:00  INFO 88312 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./build/boot_dev'
-2026-04-02T14:57:12.273+08:00  INFO 88312 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-04-02T14:57:12.301+08:00  INFO 88312 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2026-04-02T14:57:12.391+08:00  INFO 88312 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-04-02T14:57:12.460+08:00  INFO 88312 --- [  restartedMain] grace.guides.GraceApplication            : Started GraceApplication in 5.775 seconds (process running for 6.623)
-2026-04-02T14:57:12.468+08:00 DEBUG 88312 --- [  restartedMain] PluginsInfoApplicationContextInitializer :
+2026-04-29T11:34:27.714-05:00  WARN 5786 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-29T11:34:28.265-05:00  INFO 5786 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./build/boot_dev'
+2026-04-29T11:34:28.314-05:00  INFO 5786 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-29T11:34:28.339-05:00  INFO 5786 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-29T11:34:28.426-05:00  INFO 5786 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-29T11:34:28.490-05:00  INFO 5786 --- [  restartedMain] grace.guides.GraceApplication            : Started GraceApplication in 5.526 seconds (process running for 6.352)
+2026-04-29T11:34:28.499-05:00 DEBUG 5786 --- [  restartedMain] PluginsInfoApplicationContextInitializer :
 ----------------------------------------------------------------------------------------------------------
 Order      Plugin Name                        Plugin Version                                       Enabled
 ----------------------------------------------------------------------------------------------------------
-    1      Core                               2024.0.0                                                   Y
-    2      DataSource                         2024.0.0                                                   Y
-    3      DomainClass                        2024.0.0                                                   Y
-    4      Hibernate                          2024.0.0                                                   Y
+    1      Core                               2024.0.1                                                   Y
+    2      DataSource                         2024.0.1                                                   Y
+    3      DomainClass                        2024.0.1                                                   Y
+    4      Hibernate                          2024.0.1                                                   Y
 ----------------------------------------------------------------------------------------------------------
 
 Prepare Sample Data >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Hibernate: insert into post (id, version, title) values (default, ?, ?)
+Hibernate: insert into post (id, version, title) values (default, ?, ?)
+Hibernate: insert into post (id, version, title) values (default, ?, ?)
+Hibernate: insert into post (id, version, title) values (default, ?, ?)
 Hibernate: insert into post (id, version, title) values (default, ?, ?)
 Hibernate: insert into post (id, version, title) values (default, ?, ?)
 Hibernate: insert into post (id, version, title) values (default, ?, ?)
@@ -214,8 +218,12 @@ Hibernate: select this_.id as id1_1_0_, this_.version as version2_1_0_, this_.ti
 #8 Grace 2022.2.7 is released
 #9 Grace 2022.2.8 is released
 #10 Grace 2022.2.9 is released
-#11 What's new in Grace 2023.0.0?
-#12 Grace 2023.1.0 is also available now!
+#11 Grace 2023.0.0 is released
+#12 Grace 2023.1.0 is released
+#13 Grace 2023.2.0 is released
+#14 Grace 2023.3.0 is released
+#15 What's new in Grace 2024.0.0?
+#16 Grace 2024.0.1 is also available now!
 
 Load All Comments >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Hibernate: select comment0_.id as id1_0_, comment0_.version as version2_0_, comment0_.text as text3_0_ from comment comment0_

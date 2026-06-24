@@ -3,8 +3,8 @@
 [![Grace on X](https://img.shields.io/twitter/follow/graceframework?style=social)](https://twitter.com/graceframework)
 
 [![Groovy Version](https://img.shields.io/badge/Groovy-4.0.32-blue?style=flat&color=4298b8)](https://groovy-lang.org/releasenotes/groovy-4.0.html)
-[![Grace Version](https://img.shields.io/badge/Grace-2024.1.0-blue?style=flat&color=f49b06)](https://github.com/graceframework/grace-framework/releases/tag/v2024.1.0-RC2)
-[![Spring Boot Version](https://img.shields.io/badge/Spring_Boot-3.5.14-blue?style=flat&color=6db33f)](https://github.com/spring-projects/spring-boot/releases/tag/v3.5.14)
+[![Grace Version](https://img.shields.io/badge/Grace-2024.1.0-blue?style=flat&color=f49b06)](https://github.com/graceframework/grace-framework/releases/tag/v2024.1.0)
+[![Spring Boot Version](https://img.shields.io/badge/Spring_Boot-3.5.15-blue?style=flat&color=6db33f)](https://github.com/spring-projects/spring-boot/releases/tag/v3.5.15)
 
 
 # Spring Boot with Grace GORM
@@ -13,8 +13,8 @@ Learn how to build a Spring Boot application using GORM.
 
 ### Versions
 
-* Spring Boot 3.5.14
-* Grace Framework 2024.1.0-RC2
+* Spring Boot 3.5.15
+* Grace Framework 2024.1.0
 * Groovy 4.0.32
 
 ### Adding Grace Dependencies
@@ -74,7 +74,7 @@ class Post {
 ```
 
 > [!NOTE]  
-> In Grace 2023.1.0, you can also place GORM Entity in the `src/main/groovy`.
+> After Grace 2023.1.0, you can also place GORM Entity in the `src/main/groovy`.
 
 Creating `PostService.groovy` and place it in `app/services`,
 
@@ -152,43 +152,43 @@ Staring the App by execute the following Gradle task,
   '  |____| .__|_| |_|_| |_\__, | / / / /
  =========|_|==============|___/=/_/_/_/
 
- :: Spring Boot ::               (v3.5.14)
+ :: Spring Boot ::               (v3.5.15)
 
-2026-06-12T10:27:52.109+08:00  INFO 11299 --- [  restartedMain] grace.guides.GraceApplication            : Starting GraceApplication using Java 17.0.19 with PID 11299 (/Users/rain/Development/github/grace/grace-guides/gs-spring-boot-gorm/build/classes/groovy/main started by rain in /Users/rain/Development/github/grace/grace-guides/gs-spring-boot-gorm)
-2026-06-12T10:27:52.110+08:00  INFO 11299 --- [  restartedMain] grace.guides.GraceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-06-12T10:27:52.134+08:00  INFO 11299 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-06-12T10:27:52.134+08:00  INFO 11299 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-06-12T10:27:52.722+08:00  INFO 11299 --- [  restartedMain] g.plugins.DefaultGrailsPluginManager     : Total 4 plugins loaded successfully, take in 36 ms
-2026-06-12T10:27:52.990+08:00  INFO 11299 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-06-12T10:27:53.000+08:00  INFO 11299 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-12T10:27:53.000+08:00  INFO 11299 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
-2026-06-12T10:27:53.027+08:00  INFO 11299 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-12T10:27:53.027+08:00  INFO 11299 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 893 ms
-2026-06-12T10:27:53.310+08:00  INFO 11299 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
-2026-06-12T10:27:53.415+08:00  INFO 11299 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2026-06-12T10:27:53.455+08:00  INFO 11299 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-12T10:27:53.543+08:00  INFO 11299 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./build/boot_dev user=SA
-2026-06-12T10:27:53.544+08:00  INFO 11299 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-12T10:27:53.554+08:00  INFO 11299 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-06-25T02:20:33.188+08:00  INFO 38775 --- [  restartedMain] grace.guides.GraceApplication            : Starting GraceApplication using Java 17.0.19 with PID 38775 (/Users/rain/Development/github/grace/grace-guides/gs-spring-boot-gorm/build/classes/groovy/main started by rain in /Users/rain/Development/github/grace/grace-guides/gs-spring-boot-gorm)
+2026-06-25T02:20:33.189+08:00  INFO 38775 --- [  restartedMain] grace.guides.GraceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-25T02:20:33.206+08:00  INFO 38775 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-25T02:20:33.206+08:00  INFO 38775 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-25T02:20:33.729+08:00  INFO 38775 --- [  restartedMain] g.plugins.DefaultGrailsPluginManager     : Total 4 plugins loaded successfully, take in 34 ms
+2026-06-25T02:20:33.940+08:00  INFO 38775 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-25T02:20:33.948+08:00  INFO 38775 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-25T02:20:33.948+08:00  INFO 38775 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-06-25T02:20:33.969+08:00  INFO 38775 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-25T02:20:33.970+08:00  INFO 38775 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 762 ms
+2026-06-25T02:20:34.149+08:00  INFO 38775 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-06-25T02:20:34.246+08:00  INFO 38775 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-25T02:20:34.285+08:00  INFO 38775 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-25T02:20:34.371+08:00  INFO 38775 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./build/boot_dev user=SA
+2026-06-25T02:20:34.372+08:00  INFO 38775 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-25T02:20:34.381+08:00  INFO 38775 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: drop table if exists comment CASCADE
 Hibernate: drop table if exists post CASCADE
 Hibernate: create table comment (id bigint generated by default as identity, version bigint not null, text varchar(255) not null, primary key (id))
 Hibernate: create table post (id bigint generated by default as identity, version bigint not null, title varchar(255) not null, primary key (id))
-2026-06-12T10:27:54.041+08:00  WARN 11299 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-12T10:27:54.267+08:00  WARN 11299 --- [  restartedMain] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
-2026-06-12T10:27:54.309+08:00  INFO 11299 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./build/boot_dev'
-2026-06-12T10:27:54.327+08:00  INFO 11299 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-06-12T10:27:54.337+08:00  INFO 11299 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2026-06-12T10:27:54.384+08:00  INFO 11299 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-06-12T10:27:54.414+08:00  INFO 11299 --- [  restartedMain] grace.guides.GraceApplication            : Started GraceApplication in 2.619 seconds (process running for 3.006)
-2026-06-12T10:27:54.418+08:00 DEBUG 11299 --- [  restartedMain] PluginsInfoApplicationContextInitializer :
+2026-06-25T02:20:34.757+08:00  WARN 38775 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-25T02:20:34.963+08:00  WARN 38775 --- [  restartedMain] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2026-06-25T02:20:35.004+08:00  INFO 38775 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./build/boot_dev'
+2026-06-25T02:20:35.020+08:00  INFO 38775 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-06-25T02:20:35.030+08:00  INFO 38775 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-06-25T02:20:35.075+08:00  INFO 38775 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-06-25T02:20:35.102+08:00  INFO 38775 --- [  restartedMain] grace.guides.GraceApplication            : Started GraceApplication in 2.105 seconds (process running for 2.433)
+2026-06-25T02:20:35.106+08:00 DEBUG 38775 --- [  restartedMain] PluginsInfoApplicationContextInitializer :
 ----------------------------------------------------------------------------------------------------------
 Order      Plugin Name                        Plugin Version                                       Enabled
 ----------------------------------------------------------------------------------------------------------
-    1      Core                               2024.1.0-RC2                                               Y
-    2      DataSource                         2024.1.0-RC2                                               Y
-    3      DomainClass                        2024.1.0-RC2                                               Y
-    4      Hibernate                          2024.1.0-RC2                                               Y
+    1      Core                               2024.1.0                                                   Y
+    2      DataSource                         2024.1.0                                                   Y
+    3      DomainClass                        2024.1.0                                                   Y
+    4      Hibernate                          2024.1.0                                                   Y
 ----------------------------------------------------------------------------------------------------------
 
 Prepare Sample Data >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

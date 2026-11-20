@@ -16,8 +16,11 @@ class BootStrap {
         (0..3).each {
             new Post(title: "Grace 2023.${it}.0 is released").save()
         }
-        new Post(title: "What's new in Grace 2024.0.0?").save()
-        new Post(title: "Grace 2024.0.1 is also available now!").save()
+        (0..2).each {
+            new Post(title: "Grace 2024.${it}.0 is released").save()
+        }
+        new Post(title: "What's new in Grace 2024.2.0?").save()
+        new Post(title: "Grace 2025.0.0-M3 is also available now!").save()
         new Comment(text: "Wow, Grace is awesome!").save()
     }
 }
